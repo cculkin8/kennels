@@ -21,7 +21,7 @@ export const AnimalCard3 = () => (
     <section className="animal">
       <h3 className="animal_name">The Best Dogs</h3>
         <div className="animal_breed">Clover: A Great Pyrenees Golden Retriever mix</div>
-        <div className="animal_breed">Scarlett: Whatever the fuck she is</div>
+        <div className="animal_breed">Scarlett: Whatever the hell she is</div>
         <div className="animal_breed">Cooper: A very precious boy who was a Golden-Kuvasz mix</div>
 
     </section>
