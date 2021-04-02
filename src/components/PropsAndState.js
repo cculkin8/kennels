@@ -9,10 +9,11 @@ export const PropsAndState = ({ yourName }) => {
     console.log(newdogsAdopted)
   }
   return (
-    <>
+    <><div className="PropsAndState">
       <h2>Welcome, {yourName} </h2>
       <p className="clickCount">Dogs Adopted: {dogsAdopted}</p>
       <button onClick={(handleClick)}>Click me to instantly adopt a Dog</button>
+      </div>
     </>
   )
 }

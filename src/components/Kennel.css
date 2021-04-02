@@ -43,3 +43,11 @@ address {
   display: flex;
   justify-content: center;
 }
+.PropsAndState{
+  margin-left:33em;
+  display:grid
+}
+.PropsAndState button{
+width:15em;
+font-size: small;
+}
