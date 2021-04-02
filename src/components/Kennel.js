@@ -4,17 +4,17 @@ import { AnimalCard, AnimalCard2, AnimalCard3 } from "./animal/AnimalCard";
 import { LocationCard, LocationCard2, LocationCard3 } from "./locations/LocationCard";
 import { CustomerCard, CustomerCard2, CustomerCard3, CustomerCard4} from "./customers/CustomerCard";
 import { EmployeeCard, EmployeeCard2, EmployeeCard3} from "./employees/EmployeeCard";
-
+import { PropsAndState } from "./PropsAndState.js"
 export const Kennel = () => (
     <>
         <h1 className ="solid">Nashville Kennels</h1>
-        <medium className ="solid">Take more dogs from us please.</medium>
+        <small className ="solid">Take more dogs from us please.</small>
 
         <address className ="solid">
             <div>Visit Us at the Nashville North Location</div>
             <div>500 Puppy Way</div>
         </address>
-
+        <PropsAndState yourName="His Almighty Thiccness" />
         <h2>Animals</h2>
         <article className="animals">
             <AnimalCard/>
