@@ -27,6 +27,9 @@ export const ApplicationViews = () => {
             <Route exact path="/Locations">
               <LocationList/>
             </Route>
+            <Route exact path="/Locations/:LocationId(\d+)">
+              <AnimalDetail/>
+            </Route>
         </>
     )
 }
