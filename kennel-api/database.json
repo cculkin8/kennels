@@ -6,9 +6,9 @@
         { "id": 4, "name": "Ugly Dogs", "breed": "Chihuahua"},
         { "id": 5, "name": "Ugly Dogs", "breed": "Bedlington Terrier"},
         { "id": 6, "name": "Ugly Dogs", "breed": "The Komondor"},
-        { "id": 7, "name": "The Best Dogs", "breed": "Chihuahua"},
-        { "id": 8, "name": "The Best Dogs", "breed": "Bedlington Terrier"},
-        { "id": 9, "name": "The Best Dogs", "breed": "The Komondor"}
+        { "id": 7, "name": "The Best Dogs", "breed": "Clover"},
+        { "id": 8, "name": "The Best Dogs", "breed": "Scarlett"},
+        { "id": 9, "name": "The Best Dogs", "breed": "Cooper"}
     ],
     "customers": [
         {
