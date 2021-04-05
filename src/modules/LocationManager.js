@@ -9,3 +9,8 @@ export const getAllLocations = () => {
 return fetch(`${remoteURL}/locations`)
 .then(result => result.json())
   } 
+export const remove = (id) =>{
+  return fetch (`${remoteURL}/location/${id}`,{
+  method: "Delete"
+  }).then(result => result.json())
+}

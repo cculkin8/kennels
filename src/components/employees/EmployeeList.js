@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { EmployeeCard } from './EmployeeCard';
-import { getAllEmployees } from '../../modules/EmployeeManager';
+import { getAllEmployees, remove } from '../../modules/EmployeeManager';
 
 export const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);
@@ -9,14 +9,20 @@ export const EmployeeList = () => {
       setEmployees(EmployeesFromAPI)
     });
   };
-
+  const deleteEmployee = id => {
+    remove(id)
+    .then(() => getAllEmployees().then(setEmployees));
+};
   useEffect(() => {
     getEmployees();
   }, []);
 
   return (
         <div className="container-cards">
-        {employees.map(employee => <EmployeeCard key={employee.id} employee={employee}/>)}
+        {employees.map(employee => 
+        <EmployeeCard 
+        key={employee.id} employee={employee}
+        deleteEmployee={deleteEmployee}/>)}
         </div>
     );
 };
