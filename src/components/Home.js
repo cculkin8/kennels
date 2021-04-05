@@ -11,6 +11,6 @@ export const Home = () => (
             500 Puppy Way
             </div>
             </address>
-        <PropsAndState classname="solid" yourName={"His Royal Thiccness"} />
+        <PropsAndState classname="solid" yourName={"His Royal Thiccness"} pet={"Clover"} />
     </>
 )
