@@ -8,12 +8,9 @@ import {EmployeeList } from "./employees/EmployeeList"
 export const ApplicationViews = () => {
     return (
         <>
-            {/* Render the location list when http://localhost:3000/ */}
             <Route exact path="/">
                 <Home/>
             </Route>
-
-            {/* Render the animal list when http://localhost:3000/animals */}
             <Route path="/animals">
               <AnimalList/>
             </Route>

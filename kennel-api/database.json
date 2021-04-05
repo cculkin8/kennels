@@ -1,69 +1,105 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Doodles", "breed": "Goodle" },
-        { "id": 3, "name": "Doodles", "breed": "Loodle" },
-        { "id": 4, "name": "Ugly Dogs", "breed": "Chihuahua"},
-        { "id": 5, "name": "Ugly Dogs", "breed": "Bedlington Terrier"},
-        { "id": 6, "name": "Ugly Dogs", "breed": "The Komondor"},
-        { "id": 7, "name": "The Best Dogs", "breed": "Clover"},
-        { "id": 8, "name": "The Best Dogs", "breed": "Scarlett"},
-        { "id": 9, "name": "The Best Dogs", "breed": "Cooper"}
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Carter Culkin",
-            "address": "Often found hiding nearby a Chipotle"
-        },
-        {
-            "id": 2,
-            "name": "Iggy Pop",
-            "address": "Köthener Str. 38, 10963 Berlin, Germany"
-        },
-        {
-            "id": 3,
-            "name": "Nick Cave",
-            "address": "Köthener Str. 38, 10963 Berlin, Germany"
-        },
-        {
-            "id": 4,
-            "name": "David Bowie",
-            "address": "Köthener Str. 38, 10963 Berlin, Germany"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Andrew Fletcher",
-            "Location": "213 Oceola Ave, Nashville, TN 37209"
-        },
-        {
-            "id": 2,
-            "name": "Martin Gore",
-            "Location": "Wouldn't you like to know?"
-        },
-        {
-            "id": 3,
-            "name": "Dave Gahan",
-            "Location": "200 Main Street"
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "My backyard",
-            "address": "Wouldn't you like to know?"
-        },
-        {
-            "id": 3,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "Doodles",
+      "breed": "Goodle"
+    },
+    {
+      "id": 3,
+      "name": "Doodles",
+      "breed": "Loodle"
+    },
+    {
+      "id": 4,
+      "name": "Ugly Dogs",
+      "breed": "Chihuahua"
+    },
+    {
+      "id": 5,
+      "name": "Ugly Dogs",
+      "breed": "Bedlington Terrier"
+    },
+    {
+      "id": 6,
+      "name": "Ugly Dogs",
+      "breed": "The Komondor"
+    },
+    {
+      "id": 7,
+      "name": "The Best Dogs",
+      "breed": "Clover"
+    },
+    {
+      "id": 8,
+      "name": "The Best Dogs",
+      "breed": "Scarlett"
+    },
+    {
+      "id": 9,
+      "name": "The Best Dogs",
+      "breed": "Cooper"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Carter Culkin",
+      "address": "Often found hiding nearby a Chipotle"
+    },
+    {
+      "id": 2,
+      "name": "Iggy Pop",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+    },
+    {
+      "id": 3,
+      "name": "Nick Cave",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+    },
+    {
+      "id": 4,
+      "name": "David Bowie",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Andrew Fletcher",
+      "Location": "213 Oceola Ave, Nashville, TN 37209"
+    },
+    {
+      "id": 2,
+      "name": "Martin Gore",
+      "Location": "Wouldn't you like to know?"
+    },
+    {
+      "id": 3,
+      "name": "Dave Gahan",
+      "Location": "200 Main Street"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "My backyard",
+      "address": "Wouldn't you like to know?"
+    },
+    {
+      "id": 3,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
 }
