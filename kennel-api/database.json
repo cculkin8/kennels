@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Doodles",
-      "breed": "Poodle"
+      "breed": "Poodle",
+      "owner": "Nick Cave"
     },
     {
       "id": 2,
@@ -13,37 +14,43 @@
     {
       "id": 3,
       "name": "Doodles",
-      "breed": "Loodle"
+      "breed": "Loodle",
+      "owner": "Nick Cave"
     },
     {
       "id": 4,
       "name": "Ugly Dogs",
-      "breed": "Chihuahua"
+      "breed": "Chihuahua",
+      "owner": "Iggy Pop"
     },
     {
       "id": 5,
       "name": "Ugly Dogs",
-      "breed": "Bedlington Terrier"
+      "owner": "Iggy Pop"
     },
     {
       "id": 6,
       "name": "Ugly Dogs",
-      "breed": "The Komondor"
+      "breed": "The Komondor",
+      "owner": "David Bowie"
     },
     {
       "id": 7,
       "name": "The Best Dogs",
-      "breed": "Clover"
+      "breed": "Clover",
+      "owner": "Carter Culkin"
     },
     {
       "id": 8,
       "name": "The Best Dogs",
-      "breed": "Scarlett"
+      "breed": "Scarlett",
+      "owner": "Carter Culkin"
     },
     {
       "id": 9,
       "name": "The Best Dogs",
-      "breed": "Cooper"
+      "breed": "Cooper",
+      "owner": "Carter Culkin"
     }
   ],
   "customers": [
