@@ -5,6 +5,7 @@ import { AnimalList } from "./animal/AnimalList"
 import { LocationList } from "./locations/LocationList"
 import { CustomerList } from "./customers/CustomerList"
 import {EmployeeList } from "./employees/EmployeeList"
+import { AnimalDetail } from "./animal/AnimalDetail";
 export const ApplicationViews = () => {
     return (
         <>
@@ -13,6 +14,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route path="/animals">
               <AnimalList/>
+            </Route>
+            <Route path="/animals/:animalId(\d+)">
+              <AnimalDetail/>
             </Route>
             <Route path="/Employees">
               <EmployeeList/>
