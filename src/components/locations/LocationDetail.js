@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { getLocationById } from "../../modules/LocationManager";
-import "./locationDetail.css";
+import "./LocationDetail.css";
 import { useParams, useHistory } from "react-router-dom"
 
-export const locationDetail = () =>{
-    const [location, setLocation] = useState({name: "", breed: ""});
+export const LocationDetail = () =>{
+    const [location, setLocation] = useState({name: "", address: ""});
     const { locationId } = useParams();
     const history = useHistory();
 
