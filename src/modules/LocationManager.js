@@ -10,7 +10,7 @@ return fetch(`${remoteURL}/locations`)
 .then(result => result.json())
   } 
 export const remove = (id) =>{
-  return fetch (`${remoteURL}/location/${id}`,{
+  return fetch (`${remoteURL}/locations/${id}`,{
   method: "Delete"
   }).then(result => result.json())
 }
