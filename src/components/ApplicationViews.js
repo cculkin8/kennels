@@ -12,20 +12,23 @@ export const ApplicationViews = () => {
             <Route exact path="/">
                 <Home/>
             </Route>
-            <Route path="/animals">
+            <Route exact path="/animals">
               <AnimalList/>
             </Route>
-            <Route path="/animals/:animalId(\d+)">
+            <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail/>
             </Route>
-            <Route path="/Employees">
+            <Route exact path="/Employees">
               <EmployeeList/>
             </Route>
-            <Route path="/Customers">
+            <Route exact path="/Customers">
               <CustomerList/>
             </Route>
-            <Route path="/Locations">
+            <Route exact path="/Locations">
               <LocationList/>
+            </Route>
+            <Route exact path="/Locations/:LocationId(\d+)">
+              <AnimalDetail/>
             </Route>
         </>
     )

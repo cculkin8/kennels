@@ -4,53 +4,65 @@
       "id": 1,
       "name": "Doodles",
       "breed": "Poodle",
-      "owner": "Nick Cave"
+      "customerId": 3,
+      "locationId": 1
     },
     {
       "id": 2,
       "name": "Doodles",
-      "breed": "Goodle"
+      "breed": "Goodle",
+      "customerId": 4,
+      "locationId": 1
+      
     },
     {
       "id": 3,
       "name": "Doodles",
       "breed": "Loodle",
-      "owner": "Nick Cave"
+      "customerId": 2,
+      "locationId": 1
     },
     {
       "id": 4,
       "name": "Ugly Dogs",
       "breed": "Chihuahua",
-      "owner": "Iggy Pop"
+      "customerId": 2,
+      "locationId": 1
     },
     {
       "id": 5,
       "name": "Ugly Dogs",
-      "owner": "Iggy Pop"
+      "breed": "something",
+      "customerId": 2,
+      "locationId": 1
     },
     {
       "id": 6,
       "name": "Ugly Dogs",
       "breed": "The Komondor",
-      "owner": "David Bowie"
+      "customerId": 2,
+      "locationId": 1
     },
     {
       "id": 7,
       "name": "The Best Dogs",
       "breed": "Clover",
-      "owner": "Carter Culkin"
+      "customerId": 1,
+      "locationId": 1
     },
     {
       "id": 8,
       "name": "The Best Dogs",
       "breed": "Scarlett",
-      "owner": "Carter Culkin"
+      "customerId": 1,
+      "locationId": 1
     },
     {
       "id": 9,
       "name": "The Best Dogs",
       "breed": "Cooper",
-      "owner": "Carter Culkin"
+      "customerId": 1,
+      "locationId": 1
     }
   ],
   "customers": [
