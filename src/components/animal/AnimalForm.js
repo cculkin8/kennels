@@ -40,10 +40,11 @@ useEffect(()=>{
 }, []);
 const ClickSaveAnimal = (event) => {
     event.preventDefault()
+	const locationId = animal.locationId
     const customerId = animal.customerId
-    const locationId = animal.locationId
     
-    if (locationId === 0 || customerId ){
+    
+    if (locationId === 0 || customerId === 0){
         window.alert("Please select a Customer and a Location")
     }else{
         addAnimal(animal)
