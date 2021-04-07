@@ -3,9 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-.customer {
-flex-basis: 28%;
-margin: 1em;
-padding: 1em;
-border: .09em solid darkslategray;
-}
+
+  .customer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+    padding: 1em;
+    border: .09em solid darkslategray;
+    width: 34em;
+    margin-top:5em;
+  }

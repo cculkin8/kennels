@@ -5,8 +5,12 @@
   }
   
   .animal {
-      flex-basis: 28%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
       margin: 1em;
       padding: 1em;
       border: .09em solid darkslategray;
+      width: 30em;
+      margin-top:5em;
   }

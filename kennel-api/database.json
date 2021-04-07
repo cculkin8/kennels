@@ -29,13 +29,6 @@
       "locationId": 1
     },
     {
-      "id": 5,
-      "name": "something",
-      "breed": "Ugly Dogs",
-      "customerId": 2,
-      "locationId": 1
-    },
-    {
       "id": 6,
       "name": "The Komondor",
       "breed": "Ugly Dogs",
@@ -62,6 +55,13 @@
       "breed": "The Best Dogs",
       "customerId": 1,
       "locationId": 1
+    },
+    {
+      "name": "test",
+      "breed": "Doodle",
+      "customerId": 3,
+      "locationId": 2,
+      "id": 10
     }
   ],
   "customers": [
@@ -90,17 +90,17 @@
     {
       "id": 1,
       "name": "Andrew Fletcher",
-      "Location": "213 Oceola Ave, Nashville, TN 37209"
+      "locationId": 1
     },
     {
       "id": 2,
       "name": "Martin Gore",
-      "Location": "Wouldn't you like to know?"
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "Dave Gahan",
-      "Location": "200 Main Street"
+      "locationId": 2
     }
   ],
   "locations": [
