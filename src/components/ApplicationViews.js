@@ -1,12 +1,13 @@
 import React from "react"
-import { Route } from "react-router-dom"
-import { Home } from "./Home"
-import { AnimalList } from "./animal/AnimalList"
-import { LocationList } from "./locations/LocationList"
-import { CustomerList } from "./customers/CustomerList"
-import {EmployeeList } from "./employees/EmployeeList"
-import { AnimalDetail } from "./animal/AnimalDetail"
+import { Route } from "react-router-dom";
+import { Home } from "./Home";
+import { AnimalList } from "./animal/AnimalList";
+import { LocationList } from "./locations/LocationList";
+import { CustomerList } from "./customers/CustomerList";
+import {EmployeeList } from "./employees/EmployeeList";
+import { AnimalDetail } from "./animal/AnimalDetail";
 import { LocationDetail } from "./locations/LocationDetail";
+import { AnimalForm } from "./animal/AnimalForm";
 export const ApplicationViews = () => {
     return (
         <>
@@ -18,6 +19,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail/>
+            </Route>
+            <Route exact path ="/animals/create">
+              <AnimalForm/>
             </Route>
             <Route exact path="/Employees">
               <EmployeeList/>

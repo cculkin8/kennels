@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-//import the components we will need
 import { AnimalCard } from './AnimalCard';
 import { getAllAnimals, remove, getAnimalById } from '../../modules/AnimalManager';
+import { useHistory } from "react-router-dom";
+
 
 export const AnimalList = () => {
   const [animals, setAnimals] = useState([]);
@@ -19,9 +20,17 @@ export const AnimalList = () => {
   useEffect(() => {
     getAnimals();
   }, []);
-
+  const history = useHistory();
   return (
-        <div className="container-cards">
+    <div className="container-cards">
+   <section className="section-content">
+      <button type="button"
+      className="btn"
+      onClick={() => {history.push("/animals/create")}}>
+      Admit a new dog for testing
+      </button>
+    </section>
+        
         {animals.map(animal => 
           <AnimalCard
             key={animal.id} animal={animal}
