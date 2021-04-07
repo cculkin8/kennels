@@ -4,8 +4,13 @@
     justify-content: space-between;
   }
 .location {
-flex-basis: 28%;
-margin: 1em;
-padding: 1em;
-border: .09em solid darkslategray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  border: .09em solid darkslategray;
+  width: 38em;
+  margin-top:5em;
   }
+

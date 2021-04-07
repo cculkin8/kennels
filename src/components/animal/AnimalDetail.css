@@ -6,3 +6,11 @@ button:disabled,
 button:disabled:hover {
   background-color: slategray;
 }
+.animalDetail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5em;
+  border: .09em solid darkslategray;
+ 
+}

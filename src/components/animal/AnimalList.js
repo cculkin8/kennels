@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AnimalCard } from './AnimalCard';
 import { getAllAnimals, remove, getAnimalById } from '../../modules/AnimalManager';
 import { useHistory } from "react-router-dom";
+import "./AnimalList.css"
 
 
 export const AnimalList = () => {
@@ -22,19 +23,18 @@ export const AnimalList = () => {
   }, []);
   const history = useHistory();
   return (
-    <div className="container-cards">
-   <section className="section-content">
-      <button type="button"
+    <section className="button"> 
+    <button type="button"
       className="btn"
       onClick={() => {history.push("/animals/create")}}>
       Admit a new dog for testing
       </button>
-    </section>
-        
+      <div className="container-cards">
         {animals.map(animal => 
           <AnimalCard
             key={animal.id} animal={animal}
             deleteAnimal={deleteAnimal}/>)}
         </div>
+        </section>
     );
 };

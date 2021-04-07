@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { EmployeeCard } from './EmployeeCard';
 import { getAllEmployees, remove } from '../../modules/EmployeeManager';
+import "./EmployeeList.css"
 
 export const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);

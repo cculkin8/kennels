@@ -21,7 +21,6 @@ export const AnimalDetail = () =>{
             }); 
             setIsLoading(false);
     }, [animalId]);
-    {firstLetterCase(animal.name)}
     const handleDelete = () => {
         setIsLoading(true);
         remove(animalId).then(() => 
@@ -29,9 +28,12 @@ export const AnimalDetail = () =>{
         );
     };
     return (
-        <section className="animal">
-            <h3 className="animal__name">Name: {animal.name}</h3>
-            <div className="animal__breed">Breed: {animal.breed}</div>
+        <section className="animalDetail">
+            <picture className="dogpic">
+          <img src={require('./dog.svg').default} alt="My Dog" />
+        </picture>
+            <h3 className="animal__name">Name: {firstLetterCase(animal.name)}</h3>
+            <div className="animal__breed">Breed: {firstLetterCase(animal.breed)}</div>
             <div className="animal__location">Location: {animal.location?.name}</div>
             <div className="animal__owner">Customer: {animal.customer?.name}</div>
             <button type="button" disabled={isLoading} onClick={handleDelete}>Remove the Dog</button>

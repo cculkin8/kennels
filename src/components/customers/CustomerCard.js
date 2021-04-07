@@ -1,7 +1,7 @@
 import React from "react"
 import "./Customer.css"
 
-export const CustomerCard = ({ customer, deleteCustomer}) => (
+export const CustomerCard = ({ customer, deleteCustomer }) => (
     <section className="customer">
         <h3 className="customer__name">{customer.name}</h3>
         <address className="customer_address">{customer.address}</address>
