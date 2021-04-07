@@ -2,64 +2,64 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle",
+      "name": "Poodle",
+      "breed": "Doodles",
       "customerId": 3,
       "locationId": 1
     },
     {
       "id": 2,
-      "name": "Doodles",
-      "breed": "Goodle",
+      "name": "Goodle",
+      "breed": "Doodles",
       "customerId": 4,
       "locationId": 1
     },
     {
       "id": 3,
-      "name": "Doodles",
-      "breed": "Loodle",
+      "name": "Loodles",
+      "breed": "Doodle",
       "customerId": 2,
       "locationId": 1
     },
     {
       "id": 4,
-      "name": "Ugly Dogs",
-      "breed": "Chihuahua",
+      "name": "Chihuahua",
+      "breed": "Ugly Dogs",
       "customerId": 2,
       "locationId": 1
     },
     {
       "id": 5,
-      "name": "Ugly Dogs",
-      "breed": "something",
+      "name": "something",
+      "breed": "Ugly Dogs",
       "customerId": 2,
       "locationId": 1
     },
     {
       "id": 6,
-      "name": "Ugly Dogs",
-      "breed": "The Komondor",
+      "name": "The Komondor",
+      "breed": "Ugly Dogs",
       "customerId": 2,
       "locationId": 1
     },
     {
       "id": 7,
-      "name": "The Best Dogs",
-      "breed": "Clover",
+      "name": "Clover",
+      "breed": "The Best Dogs",
       "customerId": 1,
       "locationId": 1
     },
     {
       "id": 8,
-      "name": "The Best Dogs",
-      "breed": "Scarlett",
+      "name": "Scarlett",
+      "breed": "The Best Dogs",
       "customerId": 1,
       "locationId": 1
     },
     {
       "id": 9,
-      "name": "The Best Dogs",
-      "breed": "Cooper",
+      "name": "Cooper",
+      "breed": "The Best Dogs",
       "customerId": 1,
       "locationId": 1
     }

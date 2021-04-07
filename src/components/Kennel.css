@@ -12,8 +12,7 @@ textarea {
   font-family: "Comfortaa", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  background-color: darkslategray;
-  color: ivory;
+  background-color: rgb(192,198,200);
 }
 
 h1,
@@ -29,7 +28,6 @@ h6 {
 p {
   margin-bottom: 1.5em;
 
-  color:ivory;
 }
 
 strong {
