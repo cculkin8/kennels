@@ -4,6 +4,7 @@ import "./AnimalDetail.css";
 import { useParams, useHistory } from "react-router-dom"
 import { PropsAndState } from '../PropsAndState';
 import { remove } from "../../modules/AnimalManager"
+import { firstLetterCase } from "../../modules/helpers"
 
 export const AnimalDetail = () =>{
     const [animal, setAnimal] = useState({name: "", breed: ""});
@@ -20,6 +21,7 @@ export const AnimalDetail = () =>{
             }); 
             setIsLoading(false);
     }, [animalId]);
+    {firstLetterCase(animal.name)}
     const handleDelete = () => {
         setIsLoading(true);
         remove(animalId).then(() => 
