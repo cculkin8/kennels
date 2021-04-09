@@ -12,13 +12,8 @@ import { Login } from "../components/auth/Login";
 import { Register } from "../components/auth/Register";
 import { AnimalEditForm } from "./animal/AnimalEditForm";
 
-export const ApplicationViews = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+export const ApplicationViews = ({isAuthenticated, setAuthUser}) => {
 
-    const setAuthUser = (user) => {
-	  sessionStorage.setItem("kennel_customer", JSON.stringify(user))
-	  setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
-}
 
 
     return (
@@ -26,14 +21,14 @@ export const ApplicationViews = () => {
             <Route exact path="/">
                 <Home/>
             </Route>
-            <Route exact path="/animals">
-	          {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
-            </Route>
             <Route path="/login">
 	          <Login setAuthUser={setAuthUser}/>
             </Route>
             <Route path="/register">
 	          <Register setAuthUser={setAuthUser}/>
+            </Route>
+            <Route exact path="/animals">
+	          {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
             </Route>
             <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail/>
@@ -43,12 +38,6 @@ export const ApplicationViews = () => {
             </Route>
             <Route exact path="/animals/:animalId(\d+)/edit">
               <AnimalEditForm />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-            <Route path="/register">
-	          <Register />
             </Route>
             <Route exact path="/Employees">
               <EmployeeList/>
