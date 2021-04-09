@@ -2,10 +2,10 @@
   "animals": [
     {
       "id": 1,
-      "name": "Poodle",
+      "name": "poodle1",
       "breed": "Doodles",
-      "customerId": 3,
-      "locationId": 1
+      "locationId": 1,
+      "customerId": 3
     },
     {
       "id": 2,
@@ -68,22 +68,36 @@
     {
       "id": 1,
       "name": "Carter Culkin",
-      "address": "Often found hiding nearby a Chipotle"
+      "address": "Often found hiding nearby a Chipotle",
+      "email": "carter@email.com"
     },
     {
       "id": 2,
       "name": "Iggy Pop",
-      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "iggy@pop.com"
     },
     {
       "id": 3,
       "name": "Nick Cave",
-      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "nick@cave.com"
     },
     {
       "id": 4,
       "name": "David Bowie",
-      "address": "Köthener Str. 38, 10963 Berlin, Germany"
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "spaceman@email.com"
+    },
+    {
+      "email": "test@test.com",
+      "name": "regtest1 regtest2",
+      "id": 5
+    },
+    {
+      "email": "test2@test.com",
+      "name": "test2 test3",
+      "id": 6
     }
   ],
   "employees": [

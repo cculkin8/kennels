@@ -1,5 +1,5 @@
-import React from "react"
-import { Route } from "react-router-dom";
+import React, { useState } from "react" 
+import { Route, Redirect } from "react-router-dom";
 import { Home } from "./Home";
 import { AnimalList } from "./animal/AnimalList";
 import { LocationList } from "./locations/LocationList";
@@ -8,20 +8,47 @@ import {EmployeeList } from "./employees/EmployeeList";
 import { AnimalDetail } from "./animal/AnimalDetail";
 import { LocationDetail } from "./locations/LocationDetail";
 import { AnimalForm } from "./animal/AnimalForm";
+import { Login } from "../components/auth/Login";
+import { Register } from "../components/auth/Register";
+import { AnimalEditForm } from "./animal/AnimalEditForm";
+
 export const ApplicationViews = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+    const setAuthUser = (user) => {
+	  sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+	  setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+}
+
+
     return (
         <>
             <Route exact path="/">
                 <Home/>
             </Route>
             <Route exact path="/animals">
-              <AnimalList/>
+	          {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
+            </Route>
+            <Route path="/login">
+	          <Login setAuthUser={setAuthUser}/>
+            </Route>
+            <Route path="/register">
+	          <Register setAuthUser={setAuthUser}/>
             </Route>
             <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail/>
             </Route>
             <Route exact path ="/animals/create">
               <AnimalForm/>
+            </Route>
+            <Route exact path="/animals/:animalId(\d+)/edit">
+              <AnimalEditForm />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+	          <Register />
             </Route>
             <Route exact path="/Employees">
               <EmployeeList/>
@@ -38,3 +65,8 @@ export const ApplicationViews = () => {
         </>
     )
 }
+//export const ApplicationViews = () => {
+  //const [isAuthenticated, setIsAuthenticated]= () => useState(sessionStorage.getItem("kennel_customer")
+
+  //const checkIsAuthenticated = () =>{
+  //setIsAuthenticated(sessionStorage.getItem()("kennel_customer")}
