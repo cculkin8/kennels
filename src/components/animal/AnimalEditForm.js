@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { updateAnimal,getAnimalById } from "../../modules/AnimalManager";
 import { useHistory, useParams } from "react-router-dom";
+import "./AnimalForm.css";
 
 export const AnimalEditForm = () => {
     const [animal, setAnimal] = useState({ name: "", breed: "" });
@@ -70,8 +71,8 @@ export const AnimalEditForm = () => {
             <button
               type="button" disabled={isLoading}
               onClick={updateExistingAnimal}
-              className="btn btn-primary"
-            >Submit</button>
+              className="btn btn-primary">Submit</button>
+              
           </div>
         </fieldset>
       </form>

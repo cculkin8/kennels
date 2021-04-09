@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react" 
 import { Route, Redirect } from "react-router-dom";
 import { Home } from "./Home";
 import { AnimalList } from "./animal/AnimalList";
@@ -13,7 +13,13 @@ import { Register } from "../components/auth/Register";
 import { AnimalEditForm } from "./animal/AnimalEditForm";
 
 export const ApplicationViews = () => {
-  const isAuthenticated = () => sessionStorage.getItem("kennel_customer") !== null;
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+    const setAuthUser = (user) => {
+	  sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+	  setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+}
+
 
     return (
         <>
@@ -21,8 +27,14 @@ export const ApplicationViews = () => {
                 <Home/>
             </Route>
             <Route exact path="/animals">
-              {isAuthenticated()? <AnimalList /> : <Redirect to="/login"/>}
-              </Route>
+	          {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
+            </Route>
+            <Route path="/login">
+	          <Login setAuthUser={setAuthUser}/>
+            </Route>
+            <Route path="/register">
+	          <Register setAuthUser={setAuthUser}/>
+            </Route>
             <Route exact path="/animals/:animalId(\d+)">
               <AnimalDetail/>
             </Route>
