@@ -1,0 +1,144 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "poodle1",
+      "breed": "Doodles",
+      "locationId": 1,
+      "customerId": 3
+    },
+    {
+      "id": 2,
+      "name": "Goodle",
+      "breed": "Doodles",
+      "customerId": 4,
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Loodles",
+      "breed": "Doodle",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 4,
+      "name": "Chihuahua",
+      "breed": "Ugly Dogs",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 6,
+      "name": "The Komondor",
+      "breed": "Ugly Dogs",
+      "customerId": 2,
+      "locationId": 1
+    },
+    {
+      "id": 7,
+      "name": "Clover",
+      "breed": "The Best Dogs",
+      "customerId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 8,
+      "name": "Scarlett",
+      "breed": "The Best Dogs",
+      "customerId": 1,
+      "locationId": 1
+    },
+    {
+      "id": 9,
+      "name": "Cooper",
+      "breed": "The Best Dogs",
+      "customerId": 1,
+      "locationId": 1
+    },
+    {
+      "name": "test",
+      "breed": "Doodle",
+      "customerId": 3,
+      "locationId": 2,
+      "id": 10
+    },
+    {
+      "name": "Current Dog",
+      "breed": "Hello",
+      "customerId": 1,
+      "locationId": 2,
+      "id": 11
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Carter Culkin",
+      "address": "Often found hiding nearby a Chipotle",
+      "email": "carter@email.com"
+    },
+    {
+      "id": 2,
+      "name": "Iggy Pop",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "iggy@pop.com"
+    },
+    {
+      "id": 3,
+      "name": "Nick Cave",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "nick@cave.com"
+    },
+    {
+      "id": 4,
+      "name": "David Bowie",
+      "address": "Köthener Str. 38, 10963 Berlin, Germany",
+      "email": "spaceman@email.com"
+    },
+    {
+      "email": "test@test.com",
+      "name": "regtest1 regtest2",
+      "id": 5
+    },
+    {
+      "email": "test2@test.com",
+      "name": "test2 test3",
+      "id": 6
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Andrew Fletcher",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Martin Gore",
+      "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Dave Gahan",
+      "locationId": 2
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "My backyard",
+      "address": "Wouldn't you like to know?"
+    },
+    {
+      "id": 3,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
+  ]
+}
