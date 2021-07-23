@@ -22,7 +22,7 @@ return(
             500 Puppy Way
             </div>
             </address>
-            <PropsAndState classname="solid" yourName={"His Royal Thiccness"} pet={"Clover"} />
+            <PropsAndState />
             <h1>Animal Spotlight</h1>
             <button onClick={refreshSpotlightAnimal}>Reload &#x27f3;</button>
       { spotlightId && <AnimalSpotlight animalId={spotlightId} />}
